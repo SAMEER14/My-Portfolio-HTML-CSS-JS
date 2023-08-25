@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/Favicon SS/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/Favicon SS/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/Favicon SS/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/Favicon SS/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/Favicon SS/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/Favicon SS/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/Favicon SS/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/Favicon SS/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/Favicon SS/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/Favicon SS/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./images/Favicon SS/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/Favicon SS/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/Favicon SS/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/Favicon SS/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="./Js/contact.js"></script>
+</head>
+
+<body>
+
+<!-- Header  -->
+<header class="header">
+
+    <a href="/index.html" class="navbar-link logo-link">
+        <!-- <img src="images/Black & White Minimalist Business Logo-min.jpg" alt="main logo" class="logo" > -->
+        <picture>
+            <source srcset="images\Black & White Minimalist Business Logo-webp.webp" type="image/webp" />
+            <source srcset="images\Black & White Minimalist Business Logo-min.jpg" type="image/jpg" />
+            <img src="images/Black & White Minimalist Business Logo-min.jpg" alt="main logo" class="logo" >
+        </picture>
+    </a>
+    <nav class="navbar"> 
+        <ul class="navbar-lists">
+            <li>
+                <a href="/index.html" class="navbar-link home-link">Home</a>
+            </li>
+            <li>
+                <a href="/about.html" class="navbar-link about-link">About</a>
+            </li>
+            <li>
+                <a href="/ProfessionalExpereince.html" class="navbar-link services-link">Professional Experience</a>
+            </li>
+            <li>
+                <a href="/myWork.html" class="navbar-link myWork-link">My Work</a>
+            </li>
+            <li>
+                <a class="navbar-link contact-link" href="/contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="mobile-navbar-btn">
+        <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+        <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+    </div>
+
+</header>
+
+<!-- Contact Page -->
+<section class="section section-contact">
+    <div class="container">
+        <h2 class="common-heading">Get in Touch</h2>
+    </div>
+
+    <!-- added Map -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448194.82162352453!2d77.09323125!3d28.6440836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1692208297990!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <div class="section-contact-main contact-container">
+        <form 
+            action="https://formspree.io/f/mnqkpnrk"
+            method="POST"
+            class="my-form">
+            <div class="grid grid-two-column">
+                <div>
+                    <label for="username"></label>
+                    <input type="text" 
+                    name="username" 
+                    placeholder="Name"
+                    id="username" 
+                    required
+                    autocomplete="off"/>
+                </div>
+                <div>
+                    <label for="email"></label>
+                    <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="abc@mail.com" 
+                    id="email" 
+                    required
+                    autocomplete="off"/>
+                </div>
+            </div>
+
+            <div>
+            <label for="subject"></label>
+              <input 
+              type="text" 
+              name="subject" 
+              placeholder="Subject" 
+              id="subject" 
+              required
+              autocomplete="off"/>  
+            </div>
+            <div>
+                <label for="textarea"></label>
+                <textarea 
+                name="textarea" 
+                id="textarea" 
+                cols="30" 
+                rows="10" 
+                placeholder="Message"
+                required
+                autocomplete="off"
+                min="10"></textarea>
+            </div>
+
+            <div>
+                <input type="submit" name="submit" id="submit" class="btn" value="Send Message" />
+                <!-- Submit -->
+                <!-- Adding external library -> formsFree -->
+            </div>
+        </form>
+    </div>
+</section> 
+
+    <!-- Footer Section -->
+    <footer class="section-footer section">
+        <div class="container grid grid-two-column">
+            <div class="f-links">
+                <h3>Links</h3>
+                <ul>
+                    <li>
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                        <a href="./about.html">About</a>
+                    </li>
+                    <li>
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                        <a href="./ProfessionalExpereince.html">Work Expereince</a>
+                    </li>
+                    <li>
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                        <a href="./myWork.html">My Work</a>
+                    </li>
+                    <li>
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                        <a href="./SS Portfolio Website React.html">Portfolio <span><ion-icon name="logo-react"></ion-icon></span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="f-address">
+                <h3>Contact</h3>
+                <address>
+                    <div>
+                        <p><span>
+                            <ion-icon name="location-outline"></ion-icon>
+                            <a href="https://www.google.com/maps?q=New+Delhi,+India" target="_blank">New Delhi, India</a>
+                        </span></p>
+                    </div>
+                    <div>
+                        <p><span>
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <a href="mailto:sameersharma0140@gmail.com" >sameersharma0140@gmail.com</a>
+                        </span></p>
+                    </div>
+                    <div>
+                        <p><span>
+                            <ion-icon name="language-outline"></ion-icon>
+                            English, Hindi
+                        </span></p>
+                    </div>
+                </address>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="footer-connect-icons">
+
+                <a href="https://www.linkedin.com/in/sameer-sharma-967141179/"><ion-icon name="logo-linkedin" class="icons"></ion-icon></a>
+
+                <a href="https://github.com/SAMEER14"><ion-icon name="logo-github" class="icons"></ion-icon></a>
+
+                <a href="https://www.instagram.com/sameersharma14/"><ion-icon name="logo-instagram" class="icons"></ion-icon></a>
+
+                <a href="https://twitter.com/Sameer141996"><ion-icon name="logo-twitter" class="icons"></ion-icon></a>
+                
+                <a href="mailto:sameersharma0140@gmail.com" ><ion-icon name="mail-outline" class="icons"></ion-icon></a>
+
+            </div>
+
+            <div class="credits">
+                <p>No © copyright issues.
+                <br/>
+                With ♥ by Sameer Sharma
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- icon scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website - Sameer Sharma, using React</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/Favicon SS/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/Favicon SS/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/Favicon SS/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/Favicon SS/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/Favicon SS/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/Favicon SS/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/Favicon SS/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/Favicon SS/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/Favicon SS/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/Favicon SS/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./images/Favicon SS/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/Favicon SS/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/Favicon SS/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/Favicon SS/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--  -->
+    <link rel="stylesheet" href="./SS React Portfolio Loading Page/loading.css">
+</head>
+<body>
+    <input class="sr-only" type="checkbox" id="flip">
+    <label for="flip"></label>
+    <h1>tap.</h1>
+    <div class="container">
+      <div class="scene">
+        <span class="loading-label">Loading...</span>
+        <!-- Note:: You could write a quick JavaScript generator to do this -->
+        <!-- Need a notion of the number of segments in the bar plus the layout for the grid -->
+        <div class="bar" style="--columns: 20% 0 10% 0 10% 0 10% 0 20% 0 10% 0 20%; --total-length: 400;">
+          <!-- Kind of a weird way to do it but... -->
+          <!-- The --length is the percentage length of the container -->
+          <!-- The --depth is a depth off the center line as a percentage of the container -->
+          <!-- The aligned should add to 100 as we're doing grid -->
+          <!-- The non-aligned dictate the depth being used -->
+          <!-- Needs to be the length of the depth currently plus the destination depth -->
+          <div style="--name:  segment-1; --delay:   0; --length: 20; --depth:   0;" class="bar__segment bar__segment--aligned"></div>
+          <div style="--name:  segment-2; --delay:  20; --length: 30; --depth:   0;" class="bar__segment bar__segment--front"></div>
+          <div style="--name:  segment-3; --delay:  50; --length: 10; --depth:  30;" class="bar__segment bar__segment--aligned"></div>
+          <div style="--name:  segment-4; --delay:  60; --length: 50; --depth:  30;" class="bar__segment bar__segment--back"></div>
+          <div style="--name:  segment-5; --delay: 110; --length: 10; --depth: -20;" class="bar__segment bar__segment--aligned"></div>
+          <div style="--name:  segment-6; --delay: 120; --length: 60; --depth: -20;" class="bar__segment bar__segment--front"></div>
+          <div style="--name:  segment-7; --delay: 180; --length: 10; --depth:  40;" class="bar__segment bar__segment--aligned"></div>
+          <div style="--name:  segment-8; --delay: 190; --length: 70; --depth:  40;" class="bar__segment bar__segment--back"></div>
+          <div style="--name:  segment-9; --delay: 260; --length: 20; --depth: -30;" class="bar__segment bar__segment--aligned"></div>
+          <div style="--name: segment-10; --delay: 280; --length: 50; --depth: -30;" class="bar__segment bar__segment--front"></div>
+          <div style="--name: segment-11; --delay: 330; --length: 30; --depth:  20;" class="bar__segment bar__segment--aligned"></div>
+          <div style="--name: segment-12; --delay: 360; --length: 20; --depth:  20;" class="bar__segment bar__segment--back"></div>
+          <div style="--name: segment-13; --delay: 380; --length: 20; --depth:   0;" class="bar__segment bar__segment--aligned"></div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

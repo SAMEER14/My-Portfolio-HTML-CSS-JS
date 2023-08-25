@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Website">
+    <meta name="keywords" content="Sameer Sharma, Portfolio, Website, HTML, CSS, JavaScript">
+    <meta name="author" content="Sameer Sharma">
+    <title>Portfolio - Sameer Sharma</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/Favicon SS/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/Favicon SS/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/Favicon SS/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/Favicon SS/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/Favicon SS/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/Favicon SS/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/Favicon SS/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/Favicon SS/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/Favicon SS/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/Favicon SS/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./images/Favicon SS/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/Favicon SS/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/Favicon SS/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/Favicon SS/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--  -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <script defer src="./Js/index.js"></script>
+    <!-- using defer in script tag -> when page loads then js files also help in fetching data -->
+    <!-- This is best performance to use js file -> loads js file faster -->
+
+    <!-- git hub icon -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/12.0.0/build.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/12.0.0/build.css"> -->
+</head>
+
+<body>
+    <header class="header">
+
+        <a href="/index.html" class="navbar-link logo-link">
+            <!-- <img src="images/Black & White Minimalist Business Logo-min.jpg" alt="main logo" class="logo" > -->
+            <picture>
+                <source srcset="images\Black & White Minimalist Business Logo-webp.webp" type="image/webp" />
+                <source srcset="images\Black & White Minimalist Business Logo-min.jpg" type="image/jpg" />
+                <img src="images/Black & White Minimalist Business Logo-min.jpg" alt="main logo" class="logo" >
+            </picture>
+        </a>
+        <nav class="navbar"> 
+            <ul class="navbar-lists">
+                <li>
+                    <a href="/index.html" class="navbar-link home-link">Home</a>
+                </li>
+                <li>
+                    <a href="/about.html" class="navbar-link about-link">About</a>
+                </li>
+                <li>
+                    <a href="/ProfessionalExpereince.html" class="navbar-link services-link">Professional Experience</a>
+                </li>
+                <li>
+                    <a href="/myWork.html" class="navbar-link myWork-link">My Work</a>
+                </li>
+                <li>
+                    <a class="navbar-link contact-link" href="/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="mobile-navbar-btn">
+            <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+            <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </div>
+
+    </header>
+
+    <!-- =============== section below Header in index file starts ====================== -->
+    <main>
+        <section class="section-hero section">
+            <div class="container grid grid-two-column">
+                <div class="section-hero-data">
+                    <p class="hero-top-data">
+                        This is me
+                    </p>
+                    <h1 class="hero-heading">Sameer Sharma</h1>
+                    <p class="hero-para">
+                        Bonjour,<br/>
+                        Welcome to my portfolio website! I'm a passionate UI developer with a keen eye for design and a flair for creating intuitive user experiences that captivate and delight. Let's craft exceptional digital journeys together.
+                    </p>
+                    <div>
+                        <a href="/contact.html" class="btn hireme-btn">Hire me</a>
+                    </div>
+                </div>
+                
+                <div class="section-hero-image">
+                    <!-- <img src="images/Sameer-min.jpg" alt="this is me Sameer Sharma" class="hero-img"> -->
+                    <picture>
+                        <source srcset="images\Sameer-webp.webp" type="image/webp" />
+                        <source srcset="images\Sameer-min.jpg" type="image/jpg" />
+                        <img src="images/Sameer-min.jpg" alt="this is me Sameer Sharma" class="hero-img">
+                    </picture>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===============BIO data section starts ====================== -->
+    <section class="section-biodata section">
+        <div class="container grid grid-two-column">
+            <div class="bio-image">
+                <!-- <img src="images/bioData image-min.jpg" alt="this is bio image" class="hero-img"> -->
+                <picture>
+                    <source srcset="images\bioData image-webp.webp" type="image/webp" />
+                    <source srcset="images\bioData image-min.jpg" type="image/jpg" />
+                    <img src="images/bioData image-min.jpg" alt="this is bio image" class="hero-img">
+                </picture>
+            </div>
+            <!-- adding lazy load image  -->
+            <!-- <div class="bio-image lazy">
+                <img src="images/bioData image.jpg" 
+                alt="this is bio image" 
+                class="hero-img"
+                loading="lazy">
+            </div> -->
+
+            <div class="bio-data">
+                <h2 class="common-heading">About Me</h2>
+                <p class="hero-para">
+                    A results-oriented professional with 2+ years of combined experience as a Frontend Developer, Manual Tester, and debugger.
+                </p>
+                <br />
+                <p class="hero-para">
+                    Having hands-on experience in using ReactJs and Javascript. My proficiency in the Software Development Lifecycle (SDLC) enables me to ensure the seamless delivery of high-quality software products. Moreover, my experience working in an Agile environment has allowed me to effectively collaborate with clients and stakeholders, ensuring a healthy relationship between client and company.
+                </p>
+
+                <div class="bio-data-stats">
+                    <div class="bio-stats">
+                        <h3>HTML</h3>
+                        <div class="bio-progress-bar bio-progress-2">
+                            <!-- <span>90%</span> -->
+                        </div>
+                    </div>
+                    <div class="bio-stats">
+                        <h3>CSS</h3>
+                        <div class="bio-progress-bar bio-progress-3">
+                            <!-- <span>85%</span> -->
+                        </div>
+                    </div>
+                    <div class="bio-stats">
+                        <h3>JavaScript</h3>
+                        <div class="bio-progress-bar bio-progress-4">
+                            <!-- <span>85%</span> -->
+                        </div>
+                    </div>
+                    <div class="bio-stats">
+                        <h3>ReactJs</h3>
+                        <div class="bio-progress-bar bio-progress-5">
+                            <!-- <span>85%</span> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bio-data-btn">
+                    <a href="https://drive.google.com/file/d/1PuxnjP7usPYbDi6YlNg4wSSls3FkrXCa/view?usp=sharing" class="btn" target="_blank" download>Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--============================================ 
+        our service section start / My Work Expererience section
+     =============================================-->
+
+    <section class="section section-services">
+        <div class="container">
+            <h2 class="common-heading">Work Experience</h2>
+            <p>With over 2.5 years of experience, I have worked both for companies and as a freelance developer. During this time, I have gained valuable expertise in various projects and have successfully managed my responsibilities in both settings.
+            </p>
+        </div>
+
+            <div class="container grid grid-three-column">
+
+            <div class="service-box">
+                <ion-icon name="laptop-outline" class="service-icon"></ion-icon>
+                <h3>Infosys Limited</h3>
+                <p>As a Frontend developer, I worked on an application enabling Financial Advisors to offer personalized portfolio consultations to clients based on their goals. Utilizing Reactjs,JavaScript, Html and Scss </p>
+            </div>
+
+            <div class="service-box">
+                <ion-icon name="desktop-sharp" class="service-icon"></ion-icon>
+                <h3>Infosys Intern</h3>
+                <p>As a Frontend developer, I created login and registration pages following design guidelines. Additionally, I implemented product search using mock data and served as the Scrum Master, leading the Agile development process for on-time project delivery.</p>
+            </div>
+
+            <div class="service-box">
+                <ion-icon name="git-branch-outline" class="service-icon"></ion-icon>
+                <h3>Projects / Freelancing</h3>
+                <!-- <p>Visit My Work Section
+                    <a href="./myWork.html" target="_blank" 
+                    class="btn highlight-link"
+                    >Click here
+                    </a>
+                </p> -->
+                <p>Visit My Work Section For <a href="./myWork.html" class="btn highlight-link">My Projects</a></p>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <!--============================================ 
+        our work counter section start 
+      //counter starts for first when this section hits 
+     =============================================-->
+     <section class="section section-work-data">
+        <div class="container grid grid-three-column">
+            <div>
+                <h2 class="counter-numbers" data-number="20">0+</h2>
+                <p class="hero-para">projects completed</p>
+            </div>
+            <div>
+                <h2 class="counter-numbers" data-number="25000">0+</h2>
+                <p class="hero-para">Lines of code</p>
+            </div>
+            <div>
+                <h2 class="counter-numbers" data-number="100">0+</h2>
+                <p class="hero-para">Caffeine intake</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- =====================================
+        Our portfolio section starts => projects/work experiences
+    ========================================== -->
+    <section class="section section-portfolio" id="portfolio-section">
+        <div class="container">
+            <h2 class="common-heading">
+                My Work
+            </h2>
+            <p class="hero-para">I'm proud to present some of the projects I created during my learning phase.</p>
+        </div>
+
+        <div class="p-btns">
+            <div class="btn p-btn" data-btn-num="1">All</div>
+            <div class="btn p-btn" data-btn-num="2">Portfolio</div>
+            <div class="btn p-btn" data-btn-num="3">Projects</div>
+        </div>
+
+        <div class="container grid grid-three-column portfolio-images">
+            <div class="img-overlay p-btn--1 p-btn--2">
+                <!-- <img src="./images/Black & White Minimalist Business Logo crop 2.png" alt="My Portfolio" /> -->
+                <picture>
+                    <source srcset="images\Black & White Minimalist Business Logo-webp.webp" type="image/webp" />
+                    <source srcset="images\Black & White Minimalist Business Logo-min.jpg" type="image/jpg" />
+                    <img src="images/Black & White Minimalist Business Logo-min.jpg" alt="My Portfolio">
+                </picture>
+                <div class="overlay">
+                    <a href="/index.html"
+                    class="common-heading highlight-link">
+                    Portfolio
+                    </a>
+                    <a href="https://github.com/SAMEER14/My-Portfolio.git" aria-label="Repo Link" target="_blank" class="github-icon-link">
+                        <svg aria-hidden="true" data-prefix="fab" data-icon="github" class="git" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="60" height="60"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="img-overlay p-btn--1 p-btn--3">
+                <!-- adding Lazy loading
+                    class ,
+                src will contain low quality image
+                data-src -> attribute will contain image that will displayed when section appears
+                and target with js
+                with of target we will replace src with data-src
+                -->
+                <img 
+                class="lazy-img"
+                src="./images/weather app-min.jpg app-min.jpg"
+                data-src="./images/weather app-webp.webp" 
+                alt="Weather App"
+                loading="lazy" 
+                />
+                <!-- <picture>
+                    <source srcset="images\weather app-webp.webp" type="image/webp" />
+                    <source srcset="images\weather app-min.jpg" type="image/jpg" />
+                    <img src="images\weather app-min.jpg" alt="Weather App" class="lazy-img">
+                </picture> -->
+                <div class="overlay">
+                    <a href="https://github.com/SAMEER14?tab=repositories" 
+                    class="common-heading highlight-link">
+                    Forecast
+                    </a>
+                    <a href="https://github.com/SAMEER14?tab=repositories" aria-label="Repo Link" target="_blank" class="github-icon-link">
+                        <svg aria-hidden="true" data-prefix="fab" data-icon="github" class="git" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="60" height="60"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+                        
+                    </a>
+                </div>
+            </div>
+
+            <div class="img-overlay p-btn--1 p-btn--3">
+                <!-- <img src="./images/CraveExpress Logo.avif" alt="Crave-Express" /> -->
+                <picture>
+                    <source srcset="images\CraveExpress-Logo-webp.webp" type="image/webp" />
+                    <source srcset="images\CraveExpress-Logo-min.jpg" type="image/jpg" />
+                    <img src="images\CraveExpress-Logo-min.jpg" alt="Crave-Express">
+                </picture>
+                <div class="overlay">
+                    <a href="https://github.com/SAMEER14/Crave_Express" 
+                    target="_blank" 
+                    class="common-heading highlight-link">
+                    Crave Express
+                    </a>
+                    <a href="https://github.com/SAMEER14/Crave_Express" aria-label="Repo Link" target="_blank" class="github-icon-link">
+                        <svg aria-hidden="true" data-prefix="fab" data-icon="github" class="git" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="60" height="60"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="img-overlay p-btn--1 p-btn--3">
+                <!-- <img src="./images/YT Clone Logo.jpg" alt="YT clone" /> -->
+                <picture>
+                    <source srcset="images\YT Clone Logo-webp.webp" type="image/webp" />
+                    <source srcset="images\YT Clone Logo-min.jpg" type="image/jpg" />
+                    <img src="images\YT Clone Logo-min.jpg" alt="YT clone">
+                </picture>
+                <div class="overlay">
+                    <a href="https://github.com/SAMEER14/Youtube_Clone" 
+                    target="_blank" 
+                    class="common-heading highlight-link">
+                    Youtube Clone
+                    </a>
+                    <a href="https://github.com/SAMEER14/Youtube_Clone" aria-label="Repo Link" target="_blank" class="github-icon-link">
+                        <svg aria-hidden="true" data-prefix="fab" data-icon="github" class="git" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="60" height="60"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="img-overlay p-btn--1">
+                <!-- <img src="./images/github image.jpg" alt="My Github Profile" /> -->
+                <picture>
+                    <source srcset="images\github image-webp.webp" type="image/webp" />
+                    <source srcset="images\github image-min.jpg" type="image/jpg" />
+                    <img src="images\github image-min.jpg" alt="My Github Profile">
+                </picture>
+                <div class="overlay">
+                    <a href="https://github.com/SAMEER14" target="_blank" class="common-heading highlight-link TextLinkFont">Visit Github Profile
+                    </a>
+                </div>
+            </div>
+
+            <div class="img-overlay p-btn--1">
+                <!-- <img src="./images/work-exp.webp" alt="My Work Experience" /> -->
+                <picture>
+                    <source srcset="images\work-exp-webp.webp" type="image/webp" />
+                    <source srcset="images\work-exp.webp" type="image/jpg" />
+                    <img src="images\work-exp.webp" alt="My Work Experience">
+                </picture>
+                <div class="overlay">
+                    <a href="./professionalExpereince.html" target="_blank" class="common-heading highlight-link TextLinkFont">WEX
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+    </section>
+
+    <!-- ================================================================
+        using swiper js libraray using cdn links
+        created random quotes 
+    ================================================================= -->
+    <section class="section section-testimonial">
+        <div class="container">
+            <h2 class="common-heading">
+                Famous Quotes <span class="common-heading-2">from Naruto</span><span class="anime"> (Anime)</span>
+            </h2>
+        </div>
+    
+    <!-- Swiper -->
+    <div class="swiper mySwiper container">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="swiper-quote-msg">
+                    <p>
+                        "HARD WORK IS WORTHLESS FOR THOSE THAT DON’T BELIEVE IN THEMSELVES."
+                    </p>
+                </div>
+                <div class="swiper-person-data grid grid-two-column">
+                    <figure>
+                        <!-- <img src="images/ataksuki.jpg" alt="quoteImages" /> -->
+                        <picture>
+                            <source srcset="images\ataksuki-webp.webp" type="image/webp" />
+                            <source srcset="images\ataksuki-min.jpg" type="image/jpg" />
+                            <img src="images\ataksuki-min.jpg" alt="quoteImages">
+                        </picture>
+                    </figure>
+                    <div class="client-data-details">
+                        <p>
+                            Naruto
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="quote-data-details"></div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="swiper-quote-msg">
+                    <p>
+                        "SOMEBODY TOLD ME I’M A FAILURE, I’LL PROVE THEM WRONG."
+                    </p>
+                </div>
+                <div class="swiper-person-data grid grid-two-column">
+                    <figure>
+                        <!-- <img src="images/ataksuki.jpg" alt="quoteImages" /> -->
+                        <picture>
+                            <source srcset="images\ataksuki-webp.webp" type="image/webp" />
+                            <source srcset="images\ataksuki-min.jpg" type="image/jpg" />
+                            <img src="images\ataksuki-min.jpg" alt="quoteImages">
+                        </picture>
+                    </figure>
+                    <div class="client-data-details"></div>
+                </div> 
+            </div>
+
+            <div class="swiper-slide">
+                <div class="swiper-quote-msg">
+                    <p>
+                        "IF YOU DON’T LIKE THE HAND THAT FATE’S DEALT YOU WITH, FIGHT FOR A NEW ONE."
+                    </p>
+                </div>
+                <div class="swiper-person-data grid grid-two-column">
+                    <figure>
+                        <!-- <img src="images/ataksuki.jpg" alt="quoteImages" /> -->
+                        <picture>
+                            <source srcset="images\ataksuki-webp.webp" type="image/webp" />
+                            <source srcset="images\ataksuki-min.jpg" type="image/jpg" />
+                            <img src="images\ataksuki-min.jpg" alt="quoteImages">
+                        </picture>
+                    </figure>
+                    <div class="client-data-details"></div>
+                </div> 
+            </div>
+
+            <div class="swiper-slide">
+                <div class="swiper-quote-msg">
+                    <p>
+                        "REJECTION IS A PART OF ANY MAN’S LIFE. IF YOU CAN’T ACCEPT AND MOVE PAST REJECTION, OR AT LEAST USE IT AS WRITING MATERIAL – YOU’RE NOT A REAL MAN."
+                    </p>
+                </div>
+                <div class="swiper-person-data grid grid-two-column">
+                    <figure>
+                        <!-- <img src="images/ataksuki.jpg" alt="quoteImages" /> -->
+                        <picture>
+                            <source srcset="images\ataksuki-webp.webp" type="image/webp" />
+                            <source srcset="images\ataksuki-min.jpg" type="image/jpg" />
+                            <img src="images\ataksuki-min.jpg" alt="quoteImages">
+                        </picture>
+                    </figure>
+                    <div class="client-data-details"></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="swiper-quote-msg">
+                    <p>
+                        "IT’S HUMAN NATURE NOT TO REALIZE THE TRUE VALUE OF SOMETHING, UNLESS THEY LOSE IT."
+                    </p>
+                </div>
+                <div class="swiper-person-data grid grid-two-column">
+                    <figure>
+                        <!-- <img src="images/ataksuki.jpg" alt="quoteImages" /> -->
+                        <picture>
+                            <source srcset="images\ataksuki-webp.webp" type="image/webp" />
+                            <source srcset="images\ataksuki-min.jpg" type="image/jpg" />
+                            <img src="images\ataksuki-min.jpg" alt="quoteImages">
+                        </picture>
+                    </figure>
+                    <div class="client-data-details"></div>
+                </div> 
+            </div>
+
+            <div class="swiper-slide">
+                <div class="swiper-quote-msg">
+                    <p>
+                        "FAILING DOESN’T GIVE YOU A REASON TO GIVE UP, AS LONG AS YOU BELIEVE."
+                    </p>
+                </div>
+                <div class="swiper-person-data grid grid-two-column">
+                    <figure>
+                        <!-- <img src="images/ataksuki.jpg" alt="quoteImages" /> -->
+                        <picture>
+                            <source srcset="images\ataksuki-webp.webp" type="image/webp" />
+                            <source srcset="images\ataksuki-min.jpg" type="image/jpg" />
+                            <img src="images\ataksuki-min.jpg" alt="quoteImages">
+                        </picture>
+                    </figure>
+                    <div class="client-data-details"></div>
+                </div> 
+            </div>
+
+            <div class="swiper-slide">
+                <div class="swiper-quote-msg">
+                    <p>
+                        "GROWTH OCCURS WHEN ONE GOES BEYOND ONE’S LIMITS. REALIZING THAT IS ALSO PART OF TRAINING."
+                    </p>
+                </div>
+                <div class="swiper-person-data grid grid-two-column">
+                    <figure>
+                        <!-- <img src="images/ataksuki.jpg" alt="quoteImages" /> -->
+                        <picture>
+                            <source srcset="images\ataksuki-webp.webp" type="image/webp" />
+                            <source srcset="images\ataksuki-min.jpg" type="image/jpg" />
+                            <img src="images\ataksuki-min.jpg" alt="quoteImages">
+                        </picture>
+                    </figure>
+                    <div class="client-data-details"></div>
+                </div> 
+            </div>
+
+            <div class="swiper-slide">
+                <div class="swiper-quote-msg">
+                    <p>
+                        "A SMILE IS THE EASIEST WAY OUT OF A DIFFICULT SITUATION."
+                    </p>
+                </div>
+                <div class="swiper-person-data grid grid-two-column">
+                    <figure>
+                        <!-- <img src="images/ataksuki.jpg" alt="quoteImages" /> -->
+                        <picture>
+                            <source srcset="images\ataksuki-webp.webp" type="image/webp" />
+                            <source srcset="images\ataksuki-min.jpg" type="image/jpg" />
+                            <img src="images\ataksuki-min.jpg" alt="quoteImages">
+                        </picture>
+                    </figure>
+                    <div class="client-data-details"></div>
+                </div> 
+            </div>
+ 
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<!-- ================================================================
+        Our available Freelancing section starts
+    ================================================================= -->
+<section class="section section-freelancing">
+    <div class="overlay">
+
+    </div>
+    <div class="container">
+        <h2>I am <span>available</span> for <span>Freelancing</span></h2>
+        <a href="./contact.html" class="btn">HIRE ME</a>
+    </div>
+</section>
+
+<!-- ================================================================
+        Our Contact Us section starts
+    ================================================================= -->
+    <section class="section section-contact">
+        <div class="container">
+            <h2 class="common-heading">Get in Touch</h2>
+        </div>
+
+        <div class="section-contact-main contact-container">
+            <form 
+                action="https://formspree.io/f/mnqkpnrk"
+                method="POST"
+                class="my-form">
+                <div class="grid grid-two-column">
+                    <div>
+                        <label for="username"></label>
+                        <input type="text" 
+                        name="username" 
+                        placeholder="Name"
+                        id="username" 
+                        required
+                        autocomplete="off"/>
+                    </div>
+                    <div>
+                        <label for="email"></label>
+                        <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="abc@mail.com" 
+                        id="email" 
+                        required
+                        autocomplete="off"/>
+                    </div>
+                </div>
+
+                <div>
+                <label for="subject"></label>
+                  <input 
+                  type="text" 
+                  name="subject" 
+                  placeholder="Subject" 
+                  id="subject" 
+                  required
+                  autocomplete="off"/>  
+                </div>
+                <div>
+                    <label for="textarea"></label>
+                    <textarea 
+                    name="textarea" 
+                    id="textarea" 
+                    cols="30" 
+                    rows="10" 
+                    placeholder="Message"
+                    required
+                    autocomplete="off"
+                    min="10"></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" name="submit" id="submit" class="btn" value="Send Message" />
+                    <!-- Submit -->
+                    <!-- Adding external library -> formsFree -->
+                </div>
+            </form>
+        </div>
+    </section> 
+
+<!-- ================================================================
+        Our Footer section starts
+    ================================================================= -->
+    <footer class="section-footer section">
+        <div class="container grid grid-two-column">
+            <div class="f-links">
+                <h3>Links</h3>
+                <ul>
+                    <li>
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                        <a href="./about.html">About</a>
+                    </li>
+                    <li>
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                        <a href="./ProfessionalExpereince.html">Work Expereince</a>
+                    </li>
+                    <li>
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                        <a href="./myWork.html">My Work</a>
+                    </li>
+                    <li>
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <span><ion-icon name="arrow-forward-outline"></ion-icon></span>
+                        <a href="./SS Portfolio Website React.html">Portfolio <span><ion-icon name="logo-react"></ion-icon></span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="f-address">
+                <h3>Contact</h3>
+                <address>
+                    <div>
+                        <p><span>
+                            <ion-icon name="location-outline"></ion-icon>
+                            <a href="https://www.google.com/maps?q=New+Delhi,+India" target="_blank">New Delhi, India</a>
+                        </span></p>
+                    </div>
+                    <div>
+                        <p><span>
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <a href="mailto:sameersharma0140@gmail.com" >sameersharma0140@gmail.com</a>
+                        </span></p>
+                    </div>
+                    <div>
+                        <p><span>
+                            <ion-icon name="language-outline"></ion-icon>
+                            English, Hindi
+                        </span></p>
+                    </div>
+                </address>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="footer-connect-icons">
+
+                <a href="https://www.linkedin.com/in/sameer-sharma-967141179/"><ion-icon name="logo-linkedin" class="icons"></ion-icon></a>
+
+                <a href="https://github.com/SAMEER14"><ion-icon name="logo-github" class="icons"></ion-icon></a>
+
+                <a href="https://www.instagram.com/sameersharma14/"><ion-icon name="logo-instagram" class="icons"></ion-icon></a>
+
+                <a href="https://twitter.com/Sameer141996"><ion-icon name="logo-twitter" class="icons"></ion-icon></a>
+                
+                <a href="mailto:sameersharma0140@gmail.com" ><ion-icon name="mail-outline" class="icons"></ion-icon></a>
+
+            </div>
+
+            <div class="credits">
+                <p>No © copyright issues.
+                <br/>
+                With ♥ by Sameer Sharma
+                </p>
+            </div>
+        </div>
+    </footer>
+
+<!-- ================================================================
+        Click on button to go on top - creating using JS
+    ================================================================= -->
+
+<!-- <div class="scrollTop-style">
+    <ion-icon name="arrow-up-outline" class="scroll-top"></ion-icon>
+</div> -->
+
+<!-- ================================================================ -->
+
+    <!-- icon scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+</body>
+</html>
