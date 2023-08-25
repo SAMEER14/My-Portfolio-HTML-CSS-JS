@@ -1,0 +1,130 @@
+Primary Color: Blue
+
+Contrast Color: Orange
+Blue: #0000FF
+Orange: #FFA500
+Primary Color: Green
+
+Contrast Color: Magenta
+Green: #008000
+Magenta: #FF00FF
+Primary Color: Red
+
+Contrast Color: Teal
+Red: #FF0000
+Teal: #008080
+Primary Color: Purple
+
+Contrast Color: Yellow
+Purple: #800080
+Yellow: #FFFF00
+Primary Color: Yellow
+
+Contrast Color: Purple
+Yellow: #FFFF00
+Purple: #800080
+Primary Color: Orange
+
+Contrast Color: Blue
+Orange: #FFA500
+Blue: #0000FF
+Primary Color: Teal
+
+Contrast Color: Red
+Teal: #008080
+Red: #FF0000
+Primary Color: Pink
+
+Contrast Color: Green
+Pink: #FFC0CB
+Green: #008000
+Primary Color: Navy Blue
+
+Contrast Color: Gold
+Navy Blue: #000080
+Gold: #FFD700
+Primary Color: Burgundy
+
+Contrast Color: Mint Green
+Burgundy: #800000
+Mint Green: #98FF98
+
+===============================================================
+
+Primary Color: Blue
+
+Contrast Color: Orange
+Blue: RGB(0, 0, 255)
+Orange: RGB(255, 165, 0)
+Primary Color: Green
+
+Contrast Color: Magenta
+Green: RGB(0, 128, 0)
+Magenta: RGB(255, 0, 255)
+Primary Color: Red
+
+Contrast Color: Teal
+Red: RGB(255, 0, 0)
+Teal: RGB(0, 128, 128)
+Primary Color: Purple
+
+Contrast Color: Yellow
+Purple: RGB(128, 0, 128)
+Yellow: RGB(255, 255, 0)
+Primary Color: Yellow
+
+Contrast Color: Purple
+Yellow: RGB(255, 255, 0)
+Purple: RGB(128, 0, 128)
+Primary Color: Orange
+
+Contrast Color: Blue
+Orange: RGB(255, 165, 0)
+Blue: RGB(0, 0, 255)
+Primary Color: Teal
+
+Contrast Color: Red
+Teal: RGB(0, 128, 128)
+Red: RGB(255, 0, 0)
+Primary Color: Pink
+
+Contrast Color: Green
+Pink: RGB(255, 192, 203)
+Green: RGB(0, 128, 0)
+Primary Color: Navy Blue
+
+Contrast Color: Gold
+Navy Blue: RGB(0, 0, 128)
+Gold: RGB(255, 215, 0)
+Primary Color: Burgundy
+
+Contrast Color: Mint Green
+Burgundy: RGB(128, 0, 0)
+Mint Green: RGB(152, 255, 152)
+
+===========================================================
+
+ old century-themed color palette with RGB codes:
+
+Primary Color: Sepia Brown
+
+Hex: #704214
+RGB: RGB(112, 66, 20)
+Contrast Color: Rusty Red
+
+Hex: #9E3329
+RGB: RGB(158, 51, 41)
+Secondary Color: Antique Cream
+
+Hex: #F2EAD7
+RGB: RGB(242, 234, 215)
+Accent Color: Rustic Gold
+
+Hex: #B08848
+RGB: RGB(176, 136, 72)
+Text Color: Dark Sepia
+
+Hex: #3E1C14
+RGB: RGB(62, 28, 20)
+
+

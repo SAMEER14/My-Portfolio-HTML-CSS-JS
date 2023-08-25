@@ -1,0 +1,1335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap');
+
+/* set universal padding margin 0 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* create reusable code => css variables */
+/* Example heading must be same colour */
+/* below are css variables */
+
+:root {
+    --heading: rgb(0, 10, 45);
+    --para: #777;
+    --para-tint: #e4e4e4;
+    --white: #fff;
+    --black: #212529;
+    --helper: #8490ff;
+    --helper-tint: #f3f4ff;
+    --bg: rgb(249 249 255);
+    --gradient: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
+    --gradientSupport: -webkit-linear-gradient(0deg,
+            rgb(132 144 255) 0%,
+            rgb(98 189 252) 100%);
+    --shadow: 0px 0px 20px 0px rgb(132 144 255 /20%);
+    --shadowSupport: 0px 20px 20px 0px rgb(132 144 255 /30%);
+    --icons-bg: rgba(144, 172, 209, 0.2);
+    --overlay: #3e64ff;
+}
+
+html {
+    font-size: 7px;
+    /* font-size: 62.5%; */
+    overflow-x: hidden;
+  }
+  
+  body {
+    font-size: 1.6rem; /* Equivalent to 16px (10px * 1.6) */
+    overflow-x: hidden;
+  }
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: var(--heading);
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+p {
+    color: var(--para);
+    line-height: 1.6;
+    font-size: 1.7rem;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/* added link tag highlight on hover */
+a.highlight-link {
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+a.highlight-link:hover {
+    background-color: #000000;
+    color: #f1f1f1;
+  }
+
+  
+li {
+    list-style: none;
+}
+
+/* -----------------Header Section Starts -------------*/
+.header {
+    padding: 0 4.8rem;
+    height: 10rem;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* used display flex, justify-content: space-between;
+    align-items: center; to show the data like in nav bar one side logo and right side the hyperlinks, This can also be done from grid */
+}
+
+.header .logo {
+    height: 6rem;
+    /* width: 200px; */
+}
+
+/*target parent element */
+.navbar-lists {
+    display: flex;
+    gap: 4.8rem;
+    /* 4.9rem = 48px */
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+    display: inline-block;
+    /* inline-block then we cant use padding margin in it and more exceptions */
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    /* color: var(--para); */
+    /* color: #212529; */
+    /* font-family: 'Poppins', sans-serif; */
+    color: var(--black);
+    transition: color 0.3s linear;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+    color: var(--helper);
+    /* using transition property in above for smooth experience */
+}
+
+/* ===============MORE - Reusable Code========================================== */
+.section {
+    padding: 9rem 0;
+    /* padding 9px from top and bottom */
+}
+
+.container {
+    max-width: 140rem;
+    /* 1400px is max width we are giving  ,setting this according to 24inch monitor*/
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    gap: 9rem;
+}
+
+.grid-two-column {
+    grid-template-columns: repeat(2, 1fr);
+    /* OR both are same */
+    /* grid-template-columns: 1fr, 1fr; */
+}
+
+.grid-three-column {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-four-column {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.btn {
+    background: var(--gradientSupport);
+    padding: 1.6rem 3.2rem;
+    border: none;
+    color: var(--helper-tint);
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    text-align: center;
+    /* max-width: 16rem; */
+}
+
+.btn:hover,
+.btn:active {
+    /* box-shadow: 0 2rem 2rem 0 rgb(132 144 255 /30%); */
+    /* box-shadow: var(--shadow); */
+    box-shadow: var(--shadowSupport);
+    /* add transition for smooth effect */
+}
+
+.common-heading {
+    font-size: 4.8rem;
+    font-weight: 600;
+    margin-bottom: 6rem;
+    text-transform: capitalize;
+    position: relative;
+}
+
+/* This is done to make a circle and line for our headings */
+.common-heading::before {
+    content: "";
+    /* content property css */
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--helper);
+    border-radius: 50%;
+    /*for circle to appear instead of box  */
+}
+
+.common-heading::after {
+    content: "";
+    position: absolute;
+    top: 118%;
+    left: 1.5rem;
+    min-width: 20rem;
+    height: .3rem;
+    background-color: var(--helper);
+    /* if not given height here then no bg color will appear */
+
+}
+
+/* ===========Hero Section Starts========= */
+.section-hero {
+    background-color: var(--bg);
+}
+
+.section-hero-data {
+    display: flex;
+    flex-direction: column;
+    /* hero data falls under block element -gives new line new space */
+    justify-content: center;
+    /* this will keep data in image center of any size  */
+    /* align-items: flex-start; */
+}
+
+.hero-top-data {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--helper);
+}
+
+.hero-heading {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 6.4rem;
+}
+
+.hero-para {
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+    max-width: 60rem;
+    font-size: 2rem;
+}
+/* using hero-para as common para CSS for most of the paragraph */
+
+.section-hero-image {
+    /* to keep image in center of div use these 3 properties */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+picture{
+    text-align: center;
+}
+
+.hero-img {
+    max-width: 63%;
+}
+
+/* create code for one button reusable css code above*/
+
+/* ==================BIO Section Starts=============== */
+.bio-image {
+    /* to keep image in center of div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-image img{
+    width: 80%;
+    box-shadow: 2rem 2rem 0 0 var(--helper);
+    /* side and bottom target */
+    display: inline-block;
+    /* make image inline-block as by default
+    they are inline element so that we can use padding and all*/
+}
+
+/* targeting bio data stats as we want space between each topic 
+design, html,css,....... */
+.bio-data-stats {
+    display: flex;
+    padding: 6.4rem 0;
+    flex-direction: column;
+    gap: 3rem;
+    /*this gap between each topic+% pair
+    using flex box and grid*/
+}
+
+.bio-stats h3 {
+    margin-bottom: 1rem;
+}
+
+.bio-progress-bar {
+    width: 90%;
+    height: 0.8rem;
+    background-color: var(--para-tint);
+    border-radius: 10rem;
+    position: relative;
+    box-shadow: var(--shadow);
+}
+
+.bio-progress-bar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    /*giving percentage as width*/
+    height: inherit;
+    background: var(--gradientSupport);
+    border-radius: 10rem;
+}
+
+/* for rest we have given extra class for it in html we gave extra class for rest heading
+html,css,js and for first we gave default */
+/* using pseudo elements */
+.bio-progress-2::before {
+    width: 85%;
+}
+
+.bio-progress-3::before {
+    width: 80%;
+}
+
+.bio-progress-4::before {
+    width: 75%;
+}
+
+.bio-progress-5::before {
+    width: 85%;
+    width: 75%;
+}
+
+.bio-progress-bar span {
+    position: absolute;
+    top: 1.8rem;
+    width: 4rem;
+    height: 2rem;
+    background-color: var(--helper);
+    color: var(--white);
+    /* to put % in center use below css */
+    /* we can create our own snippet will be easy while coding and take less time */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: 0;
+}
+
+/* now we want that each bio-progress-bar span tag to be shown at the progress bar 
+like pointer be at 80% where the bar width is also 80%
+IMPORTANT => using resuable code
+when we add property position absolute then => height/width/ doesn't matter
+we get 4 extra property top,right,bottom,left
+
+//by default it is left and bottom
+*/
+
+.bio-progress-bar span {
+    left: 76%;
+    /* but we see that the starting point of box is at the end of widht of bar
+    we want it in center the box should be in center pointing to end of progress bar */
+}
+
+.bio-progress-2 span {
+    left: 86%;
+}
+
+.bio-progress-3 span {
+    left: 81%;
+}
+
+.bio-progress-4 span {
+    left: 81%;
+}
+
+.bio-progress-5 span {
+    left: 81%;
+}
+
+/* To create a caret -small triangle */
+
+.bio-progress-bar span::after {
+    /* USING BEFORE AFTER PSEUDO ELEMENTS */
+    /* make 4 box with border and make its width and height 0 
+    and show only top one rest hide it and then join  */
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 0.8rem solid var(--helper);
+    /* border-bottom-color: red; */
+    /* border-top-color: green; */
+    
+    border-color: transparent;
+    border-bottom-color: var(--helper);
+    top: -1.6rem;
+
+    /* check again from video using pseudo elements 
+    https://www.youtube.com/watch?v=UdQto-9oQZA&list=PLwGdqUZWnOp2jmYb2TQGYgBYp0xGwj9V1&index=32*/
+}
+
+/* =================================
+    Portfolio section start
+=================================== */
+
+.section-portfolio {
+    background: var(--bg);
+    transition: all 0.7s linear;
+}
+
+.section-portfolio p {
+    max-width: 60rem;
+    /* this done so that our paragraph should 
+    be not in 1 line i.e. para below My work */
+}
+
+.p-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+    margin-top: 6.4rem;
+    margin: 6.4rem 0;
+    /* above line equal to in .portfolio-images as /* margin-top: 6.4rem; */
+}
+
+.portfolio-images {
+    gap: 3.2rem;
+    /* margin-top: 6.4rem; */
+}
+
+.portfolio-images img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+    /* overflow hidden so that no overlay should be visible uneccsary  */
+}
+
+.img-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-overlay .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradientSupport);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    transition: all 0.3s linear;
+    border-radius: 7px;
+}
+
+.img-overlay:hover > .overlay {
+    transform: translateY(0);
+    opacity: 0.8;
+    /* cursor: pointer; */
+}
+
+.img-overlay .overlay .common-heading {
+    margin: 0;
+    color: var(--white);
+    text-decoration: none;
+}
+
+
+/* we can adjust the circleand horizontal line -> do before and after to none -> height and width to 0 ----------------*/
+
+/* .img-overlay:hover > .overlay .common-heading::before {
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: var(--helper);
+    border-radius: 50%;
+
+}
+.img-overlay:hover > .overlay.common-heading::after {
+    content: "";
+    position: absolute;
+    top: 118%;
+    left: 1.5rem;
+    min-width: 0;
+    height: 0;
+    background-color: var(--helper);
+
+}  */
+
+/* 
+.p-btn:hover{
+    transform: translateY(-1rem);
+    /* use this hover on click  on that button 
+    use JAVASCRIPT later 
+} 
+*/
+
+.p-btn-active {
+    transform: translateY(-1rem);
+}
+
+/* when you think design is not responding or comes wrong see
+closing opening tags */
+
+/* video 29 */
+.p-image-not-active {
+    display: none;
+    /* with this help we can hide the portfolio image project 
+    when not matches */
+}
+
+/* so what we do is we are hiding the non matching ones and showing remaning portfolio images */
+
+/*==================================
+work data section starts
+====================================*/
+
+.section-work-data {
+    background: var(--gradientSupport);
+    text-align: center;
+    transition: all 0.7s linear;
+    color: var(--white);
+}
+
+.counter-numbers {
+    font-size: 4.8rem;
+}
+
+.section-work-data p {
+    color: var(--white);
+    /* this white for p tag */
+    text-transform: capitalize;
+}
+
+/*==================================
+services section starts
+====================================*/
+
+.section-services {
+    transition: all 0.7s linear;
+}
+
+.section-services p {
+    max-width: 60rem;
+}
+
+.section-services .grid {
+    margin-top: 10rem;
+    row-gap: 10rem;
+}
+
+.service-box {
+    text-align: center;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+    padding: 6.4rem 3.4rem;
+    transition: all 0.3s linear;
+}
+
+.service-box p{
+    font-weight: 800;
+    font-style: italic;
+    color: var(--helper);
+     
+}
+
+.service-box:hover,
+.service-box:active {
+    transform: translateY(-3rem);
+}
+
+.service-icon {
+    width: 8rem;
+    height: 8rem;
+    /* background-color: rgba(144, 172, 209, 0.2); */
+    background-color: var(--icons-bg);
+    display: inline-block;
+    /* this is inline element so we use
+    display inline-block for padding margin use*/
+
+    /* using border radius generator for fancy radius */
+    /* create fancy border radius */
+    border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+    padding: 1.4rem 1.8rem;
+    position: relative;
+    /* position relative so that to use pseudo elements for before and after */
+    color: var(--heading);
+
+    /* animation */
+    animation: water-wave 3s linear infinite;
+}
+
+/* using key frames and changing the values at different percentage of animation */
+@keyframes water-wave {
+    0% {
+        border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+    }
+
+    50% {
+        border-radius: 3% 97% 15% 85% / 72% 0% 100% 28%;
+    }
+
+    100% {
+        border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+    }
+}
+
+/* creating a line effect in water ripple effect */
+.service-icon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    /* if height width 100% then it will be overlap the ripple effect
+    we se kept it 90 to show inside */
+    border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+    /* background: var(--black); */
+    background: transparent;
+    border: 1px solid var(--black);
+    /* effect on border */
+    animation: water-wave 5s linear infinite;
+}
+
+.service-box h3 {
+    text-transform: capitalize;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+/*==================================
+Testinomial section starts swiper styling from swiper.js
+====================================*/
+
+.common-heading-2{
+    font-size: 22px;
+    text-transform: none;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-top: 9rem;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /* adding column property */
+    /* by default direction flex is row so change to column */
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  /* .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+
+.swiper-quote-msg {
+    padding: 5rem 8rem;
+    background: var(--white);
+    border-radius: 1rem;
+    text-align: left;
+    box-shadow: var(--shadow);
+    position: relative;
+}
+
+.swiper-slide img{
+    max-width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 0.5rem solid var(--helper-tint);
+}
+
+/* creating big quotes from css using pseudo elements */
+.swiper-quote-msg::before {
+    content: "";
+    position: absolute;
+    bottom: -10rem;
+    left: 50%;
+    border: 5rem solid white;
+    border-color: transparent;
+    border-top-color: var(--helper-tint);
+    transform: translateX(-50%);
+}
+
+.swiper-person-data {
+    /* as it is inside the grid , it has default properties like justify-content,align items, flex */
+    align-items: center;
+    margin-top: 3.2rem;
+    gap: 3.2rem;
+}
+
+.swiper-quote-msg p::before {
+    content: "\f10d"; 
+    position: absolute;
+    top: 0;
+    left: 3rem;
+    font-size: 3rem;
+    font-family: "Font Awesome 6 Free";
+    color: #ced3ff;
+    font-weight: 900;
+}
+
+.swiper-quote-msg p::after {
+    content: "\f10e";
+    position: absolute;
+    bottom: 0;
+    right: 3rem;
+    font-size: 3rem;
+    font-family: "Font Awesome 6 Free";
+    color: #ced3ff;
+    font-weight: 900;
+}
+
+/* content: "\f10d"; this is unqiue code from font awesome */
+
+/*==================================
+Available Freelancing section starts 
+====================================*/
+
+.section-freelancing{
+    background-image: url('../images/parallax effect image-min.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* for parallax effect only 1 line of code */
+    background-attachment: fixed;
+    position: relative;
+    transition: all 0.7s linear;
+    text-align: center;
+}
+
+.section-freelancing .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--helper);
+    background-color: var(--overlay);
+    opacity: 0.5;
+}
+
+.section-freelancing .container{
+    position: relative;
+}
+
+.section-freelancing h2{
+    font-size: 5.4rem;
+    color: var(--white);
+    margin-bottom: 1.8rem;
+}
+
+.section-freelancing span{
+    color: #a0f669;
+}
+
+/* .section-freelancing h2, .section-freelancing p{
+    color: var(--white);
+    margin-bottom: 1.8rem;
+} */
+
+/*==================================
+Contact me / Submit form section starts 
+====================================*/
+
+.section-contact-main{
+    max-width: 70rem;
+    margin: 0 auto;
+    margin-top: 9rem;
+    transition: all 0.3s linear;
+}
+
+.section-contact-main .grid{
+    gap: 3.2rem;
+}
+
+.section-contact-main form{
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+/* no using margin bottom because we used flex so it is good to analyze the space */
+
+.section-contact-main input,
+.section-contact-main textarea {
+  padding: 1.5rem 2rem; 
+  border: 0.1rem solid #c9c9c9;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-family: "work sans";
+  width: 100%;
+}
+
+/* targeting attribute like this [] to tackle the submit button width*/
+.section-contact-main input[type="submit"]{
+    max-width: 30%;
+    border: none;
+}
+
+/* .section-contact-main .btn{
+    max-width:30%;
+    border: none;
+} */
+
+/*==================================
+Footer section starts 
+====================================*/
+
+.section-footer {
+    background-color: var(--heading);
+    /* background-color: #121a5f; */
+    transition: all 0.7s linear;
+}
+
+.section-footer h3{
+    color: var(--white);
+    margin-bottom: 4rem;
+}
+
+.f-address p {
+    color: #adadad;
+}
+
+.f-links ul, .f-address address{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    justify-content: center;
+}
+
+.f-links li, .f-links a{
+    font-size: 1.8rem;
+    color: #adadad;
+    text-transform: capitalize;
+}
+
+/* .f-address a {
+    font-size: 1.8rem;
+    color: #adadad;
+} */
+
+.f-links span, .f-address span{
+    margin-right: 1rem;
+}
+
+.f-address p, .f-address p a{
+    /* font-style: normal; */
+    color: #adadad;
+}
+
+.footer-connect-icons{
+    margin: 5rem 0;
+    text-align: center;
+    color: #adadad;
+}
+
+.footer-connect-icons .icons{
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--icons-bg);
+    display: inline-block;
+    padding: 1.4rem 1.8rem;
+    position: relative;
+    color: var(--white);
+    animation: water-wave 3s linear infinite;
+    cursor: pointer;
+}
+
+.credits p {
+    text-align: center;
+    color: #adadad;
+}
+
+.f-links a:hover, .f-address a:hover, .f-links a:active .f-footer a:active{
+    color: var(--white);
+}
+
+/*==================================
+scroll to top section starts 
+====================================*/
+
+.scrollTop-style{
+    position: fixed;
+    right: 2%;
+    bottom: 5%;
+    z-index: 1;
+}
+
+.scroll-top{
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--helper);
+    display: inline-block;
+    padding: 1.4rem 1.8rem;
+    position: relative;
+    color: var(--heading);
+    animation: water-wave 3s linear infinite;
+    cursor: pointer;
+}
+
+/*==================================
+Menu hamburger and Cross
+====================================*/
+/* Making these property to only show when our screen size is small , so for deskyop version we will hide it */
+.mobile-navbar-btn{
+    display: none;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+/* this we have done to show only 1 icon */
+.mobile-nav-icon[name="close-outline"] {
+    display: none;
+}
+
+.mobile-nav-icon{
+    width: 5rem;
+    height: 5rem;
+    color: var(--black);
+}
+
+/* using media queries for this icon for view in other devices  */
+/* used media queries in last */
+
+
+
+/*==================================
+ Stikcy Nav bar 
+====================================*/
+
+/* .sticky-body .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: var(--shadow);
+} */
+/* till here is also good always sticky */
+
+ /* but if we want to add sticky just when bio data/About me section comes */
+.sticky .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: var(--shadow);
+    padding-top: 0;
+    padding-bottom: 0;
+    /* height: */
+}
+
+/* adding margin-top because when we done for sticky it was overflowing and content went behind navbar , so we are giving margin from top again i.e. if sticky class is there then give margin top so that it comes back to its position*/
+.sticky .section-hero{
+    margin-top: 10rem;
+    margin-bottom: 2.5rem;
+}
+
+
+
+  /* ------------ adding more custom styling code added------------------  */
+
+  /* github link and icon and Live link text on hover*/
+  /* ------------------------------------- */
+  .git{
+    /* fill: var(--black); */
+    fill: #3a3a3a95;
+  }
+  
+  .git :hover{
+    fill: #000000;
+  }
+
+  .TextLinkFont{
+    font-size: 25px;
+  }
+
+  .anime{
+    font-size: 14px;
+  }
+
+  /* -------------------------------------- */
+
+/*==================================
+Media Queries 
+====================================*/
+
+/* targeting max-width */
+@media (max-width: 980px) {
+    .header {
+        position: relative;
+    }
+
+    .mobile-navbar-btn {
+        display: block;
+        z-index: 9999; 
+        /* z index so that it should be visible on top */
+        border: 3px solid var(--black);
+        color: #212529;
+    }
+
+    /* see line near 986 to see how one icon to display target element, attribute */
+
+    .header .logo {
+        width: 50%
+    }
+
+    .navbar{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: var(--gradient);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* now we want our navbar should come from right side , it is there on right side but we have hidden overflow */
+        transform: translateX(100%); 
+        transition: all 0.5s linear;
+
+        /* display: none; */
+        /* if display none - then we cant add animation , so use these alternate below properties for animation */
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        z-index: 999;
+    }
+    /* to display column wise our navbar list */
+    .navbar-lists{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .navbar-lists .navbar-link:link,
+    .navbar .navbar-lists .navbar-link:visited {
+    font-size: 3.2rem;
+    color: #212529;
+    }
+
+    /* adding active class to header and adding logic to show this when active class will be present there then these properties 
+        transform: translateX(100%); 
+        transition: all 0.5s linear;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        z-index: 9999 
+         should be remove and vice versa
+         
+         header active -> show navbar
+         else not active -> hide the navbar for small screen
+         BUT we have do this on click in icon(hamburger/cross icon)
+         we can do this with help of JS
+         */
+    .active .navbar{
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+        display: none;
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+        display: block;
+    }
+
+}
+
+
+/* More media queries */
+
+/* we cant use rem in media queries
+but we can use em also
+px -> static unit */
+
+@media (max-width: 95em) {
+    .container {
+        max-width: 130rem;
+        padding: 0 3.2rem;
+    }
+
+    /* reducing gap between nav bar links */
+    .navbar-lists{
+        gap:3.4rem
+    }
+    
+}
+
+/* target 935px because when lower the content going beside nav bar imaginary vertical line */
+
+@media (max-width: 935px) {
+    html {
+        /* font-size: 56.25%; */
+        font-size: 6px;
+    }
+
+    .container {
+        max-width: 110rem;
+    }
+
+    .grid{
+        gap: 4.8rem;
+    }
+
+    .section-hero h1{
+        line-height: 1.05;
+    }
+
+    .section-services .grid-three-column {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-services .grid{
+        gap: 6rem;
+    }
+
+    /* make bio data image top and data below it  */
+    .section-biodata section{
+        grid-row: 2;
+    }
+
+    /* .section-biodata .grid-two-column img {
+        width: 50%; 
+    } */
+}
+
+
+/* below 785px  */
+@media (max-width: 49em){
+    .container{
+        max-width: 710px;
+    }
+
+    .section-hero .grid-two-column{
+        grid-template-columns: 1fr ;
+    }
+
+    .section-hero-data{
+        align-items: center;
+    }
+    /* .hero-heading{
+        text-align: center;
+    }
+
+    .hero-para{
+        text-align: center;
+        margin-top: 5rem;
+    } */
+
+    .section-hero img{
+        max-width: 40%;
+    }
+
+    /* ========bio-data ============*/
+    .section-biodata .grid-two-column{
+        grid-template-columns: 1fr ;
+    }
+
+    .section-biodata .bio-image{
+        /* grid-row-start: 2;
+        grid-row-end: 3; */
+        grid-row: 2/3;
+        margin-top: 3.2rem;
+    }
+
+    .section-biodata img{
+        max-width: 40%;
+    }
+
+    /* .section-biodata{
+        align-items: center;
+    } */
+    .bio-data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .bio-data-stats{
+        width: 90%;
+    }
+
+    /* Projects section */
+    .section-portfolio .grid-three-column{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img-overlay .common-heading {
+        font-size: 4.2rem;
+    }
+
+    .img-overlay .common-heading::before,
+    .img-overlay .common-heading::after {
+        contain: "";
+        width: 0;
+        height: 0;
+    }
+    .git{
+        height: 40px;
+        width: 40px;
+    }
+
+}
+
+
+@media (max-width: 560px){
+    /* .container{
+        max-width: 48rem;
+    } */
+    .header{
+        padding: 0 3.2rem;
+    }
+
+    .header .logo{
+        width: 160%;
+    }
+
+    .section-services .grid-three-column{
+        grid-template-columns: 1fr;
+    }
+
+    
+    .section-freelancing h2{
+        font-size: 3.6rem;
+    }
+
+    /* .TextLinkFont{
+        font-size: 25px;
+    } */
+    .img-overlay .common-heading {
+        font-size: 3.2rem;
+    }
+
+    .img-overlay .common-heading::before,
+    .img-overlay .common-heading::after {
+        contain: "";
+        width: 0;
+        height: 0;
+    }
+
+    .git{
+        height: 30px;
+        width: 30px;
+    }
+}
+
+/* adding mobile display */
+@media (max-width: 408px){
+    .section-work-data .grid-three-column{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Projects section */
+    .section-portfolio .grid-three-column{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 480px){
+    .contact-container .grid-two-column{
+        grid-template-columns: 1fr;
+    }
+
+    .my-form {
+        padding:0 5rem;
+    }
+
+}
+
+
+/* ----- */
+/* .img-overlay picture img {
+    width: 188px; 
+    height: 190px; 
+} */
+
